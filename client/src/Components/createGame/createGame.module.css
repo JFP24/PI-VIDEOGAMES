@@ -1,0 +1,117 @@
+.main {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(141, 141, 141); */
+  background-image: url("./form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+
+  opacity: 0.9;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+}
+.container label {
+  font-size: large;
+  margin: 3px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.genres {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 650px;
+  border-radius: 10px;
+  background-color: rgb(155, 155, 155);
+  border: solid 2px black;
+  opacity: 0.9;
+  margin: 20px;
+}
+
+.plataformas {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 650px;
+  border-radius: 10px;
+  background-color: rgb(155, 155, 155);
+  border: solid 2px black;
+  opacity: 0.9;
+  margin: 20px;
+}
+
+.name {
+  height: 25px;
+  width: 400px;
+  border-radius: 8px;
+  margin: 5px;
+}
+.date {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin: 20px;
+}
+
+.button button {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgb(162, 168, 156);
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button button:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.container input {
+  border: solid 2px black;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.container textarea {
+  border: solid 2px black;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.main strong {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}

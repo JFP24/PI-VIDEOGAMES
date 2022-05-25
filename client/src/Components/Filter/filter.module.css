@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #495057;
+}
+
+.select {
+  padding: 5px;
+  margin: 5px;
+  width: 400px;
+  border-radius: 8px;
+}

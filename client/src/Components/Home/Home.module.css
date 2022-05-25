@@ -1,0 +1,67 @@
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #adb5bd;
+  /* background: url("./Fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+  background-image: url("./home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.center {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px black;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px black;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px black;
+  }
+}
+
+.ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+}
+
+span {
+  color: #070707;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+}

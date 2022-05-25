@@ -1,0 +1,64 @@
+/* .page {
+  background-image: url("./Fondo\ incio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+} */
+body {
+  background-image: url("./god.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+}
+.buton {
+  position: relative;
+  left: 260px;
+  top: 50px;
+  margin: 15px;
+  padding: 0.9em 2.5em;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #060707;
+  background-color: #495057;
+  border-radius: 7px;
+  border: solid transparent;
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.3s ease 0s;
+  z-index: 23456789;
+}
+
+.buton:hover {
+  background-color: #818181;
+  color: rgb(8, 8, 8);
+  transform: translateX(5px);
+}
+
+.titulo {
+  display: flex;
+  justify-content: left;
+  margin: 50px;
+  font-size: 50px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 60px;
+  background: #202020;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(66, 66, 66, 0.4),
+    0px -1px 1px rgba(0, 0, 0, 0.3);
+}
