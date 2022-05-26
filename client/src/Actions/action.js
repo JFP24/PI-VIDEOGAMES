@@ -111,7 +111,7 @@ export function deleteVideogame(id) {
     axios
       .delete(`/videogame/${id}`)
       .then((res) => {
-        dispatch({ type: DELETE_GAME });
+        dispatch({ type: DELETE_GAME, payload: id });
       })
       .catch((err) => {
         return err;

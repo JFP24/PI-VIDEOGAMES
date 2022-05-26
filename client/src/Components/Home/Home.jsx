@@ -7,13 +7,10 @@ import Pagination from "../Pagination/pagination";
 import FilteredBy from "../Filter/filter";
 import styles from "./Home.module.css";
 import { getAllGames, getGenres } from "../../Actions/action";
-//import notFound from "../../img/llorando.gif";
-//import loading from "../../img/conecting.gif";
 
 const Videogames = ({ allGames, getAllGames, getGenres }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [cardPerPage] = useState(15);
-  //const dispatch = useDispatch();
   //* indices de la paginación:
   const indexOfLastCard = currentPage * cardPerPage;
   const indexOfFirstCard = indexOfLastCard - cardPerPage;
@@ -61,10 +58,6 @@ const Videogames = ({ allGames, getAllGames, getGenres }) => {
               id={g.id}
             />
           ))
-        ) : typeof currentCards === "string" ? (
-          <div>
-            <img className="nonono" src="./godofwar.gif" alt=""></img>
-          </div>
         ) : (
           <div className={styles.center}>
             <div className={styles.ring}></div>

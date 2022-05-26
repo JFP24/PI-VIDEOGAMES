@@ -1,13 +1,13 @@
 import { React, useEffect } from "react";
 import { connect } from "react-redux";
-import { getVideogameDetail } from "../../Actions/action.js";
+import { deleteVideogame, getVideogameDetail } from "../../Actions/action.js";
 import Navbar from "../navBar/navBar.jsx";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styles from "./carDetail.module.css";
 
 const GameDetails = (props) => {
-  console.log(props);
+  console.log(props, "esta es la");
   const { getVideogameDetail, gameDetails } = props;
   const { idVideogame } = useParams();
   console.log(gameDetails);
@@ -19,7 +19,7 @@ const GameDetails = (props) => {
 
   // const handleDelete = () => {
   //   deleteVideogame(idVideogame);
-  //   navigate("/home");
+  //   Navigate("/home");
   // };
   return (
     <div className={styles.container}>
@@ -32,7 +32,7 @@ const GameDetails = (props) => {
             {gameDetails.description &&
             gameDetails.genres &&
             gameDetails.platforms ? (
-              <div className="div-descr">
+              <div>
                 <div className={styles.image}>
                   <img
                     src={
